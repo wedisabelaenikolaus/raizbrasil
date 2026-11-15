@@ -1,0 +1,47 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "brand": {
+          "type": "text",
+          "settings": {
+            "heading": "RAIZ BRAZIL",
+            "subtext": "<p>Ein Stück Brasilien für dein Zuhause.</p>"
+          }
+        },
+        "links": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Service",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "brand",
+        "links"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "newsletter_enable": false,
+        "newsletter_heading": "Newsletter",
+        "enable_follow_on_shop": false,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "legal_menu": "legal",
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 48,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

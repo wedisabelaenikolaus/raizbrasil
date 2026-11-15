@@ -1,0 +1,94 @@
+.raiz-editorial {
+  overflow-x: clip;
+}
+
+.raiz-editorial__grid {
+  display: grid;
+  gap: 4rem;
+  align-items: center;
+}
+
+.raiz-editorial__media {
+  position: relative;
+}
+
+.raiz-editorial__image {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: var(--raiz-ratio, 4 / 5);
+  background: rgba(var(--color-foreground), 0.06);
+}
+
+.raiz-editorial__image img,
+.raiz-editorial__image svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.raiz-editorial__image--accent {
+  position: absolute;
+  right: 0;
+  bottom: -3rem;
+  width: 42%;
+  border: 0.8rem solid rgb(var(--color-background));
+}
+
+.raiz-editorial__media--double { margin-bottom: 3rem; }
+
+.raiz-editorial__image--empty {
+  /* Only rendered inside the theme editor, as a drop target hint */
+  opacity: 0.6;
+}
+
+.raiz-editorial__heading {
+  margin: 0 0 2rem;
+  text-wrap: balance;
+}
+
+.raiz-editorial__body {
+  max-width: 54rem;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.raiz-editorial__body p { margin: 0 0 1.4rem; }
+
+.raiz-editorial__quote {
+  max-width: 48rem;
+  margin: 0 0 3rem;
+  padding-left: 2rem;
+  border-left: 2px solid var(--raiz-terracotta, currentColor);
+}
+
+.raiz-editorial__quote blockquote {
+  margin: 0;
+  font-family: var(--font-heading-family);
+  font-size: calc(var(--font-heading-scale) * 2.4rem);
+  line-height: 1.25;
+}
+
+.raiz-editorial__quote figcaption {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 990px) {
+  .raiz-editorial__grid {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 3rem;
+  }
+
+  .raiz-editorial__media { grid-column: 1 / span 6; grid-row: 1; }
+  .raiz-editorial__text { grid-column: 8 / span 5; grid-row: 1; }
+
+  .raiz-editorial__grid--image-right .raiz-editorial__media { grid-column: 7 / span 6; }
+  .raiz-editorial__grid--image-right .raiz-editorial__text { grid-column: 1 / span 5; }
+
+  .raiz-editorial__grid--image-right .raiz-editorial__image--accent { right: auto; left: -4rem; }
+  .raiz-editorial__grid--image-left .raiz-editorial__image--accent { right: -4rem; }
+}

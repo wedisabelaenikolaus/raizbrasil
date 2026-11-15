@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "notice": {
+      "type": "raiz-owner-notice",
+      "settings": {
+        "title": "Hinweis für Shop-Betreiber",
+        "text": "<p>Rechtstext (Impressum, Datenschutz, Widerruf, AGB, Versand &amp; Rückgabe) wird im Shopify-Admin unter <em>Seiten</em> bzw. <em>Einstellungen &gt; Richtlinien</em> gepflegt. Die Inhalte müssen vom Betreiber bereitgestellt und von einer rechtskundigen Person geprüft werden. Dieses Theme enthält keine Rechtstexte.</p>"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 72
+      }
+    }
+  },
+  "order": [
+    "notice",
+    "main"
+  ]
+}

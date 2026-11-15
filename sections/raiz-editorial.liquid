@@ -1,0 +1,241 @@
+{{ 'section-raiz-editorial.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign ratio = section.settings.image_ratio
+  assign has_second = false
+  if section.settings.image_2 != blank
+    assign has_second = true
+  endif
+-%}
+
+<div class="raiz-editorial color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="raiz-editorial__grid raiz-editorial__grid--{{ section.settings.layout }}">
+      <div class="raiz-editorial__media{% if has_second %} raiz-editorial__media--double{% endif %}">
+        <div class="raiz-editorial__image raiz-editorial__image--main raiz-ratio--{{ ratio }}">
+          {% render 'raiz-image',
+            image: section.settings.image_1,
+            placeholder: 'lifestyle-1',
+            sizes: '(min-width: 990px) 48vw, 100vw'
+          %}
+        </div>
+        {%- if has_second or request.design_mode -%}
+          <div class="raiz-editorial__image raiz-editorial__image--accent raiz-ratio--square{% unless has_second %} raiz-editorial__image--empty{% endunless %}">
+            {% render 'raiz-image',
+              image: section.settings.image_2,
+              placeholder: 'lifestyle-2',
+              sizes: '(min-width: 990px) 22vw, 40vw'
+            %}
+          </div>
+        {%- endif -%}
+      </div>
+
+      <div class="raiz-editorial__text">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'eyebrow' -%}
+              {%- if block.settings.text != blank -%}
+                <p class="raiz-eyebrow" {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</p>
+              {%- endif -%}
+            {%- when 'heading' -%}
+              {%- if block.settings.heading != blank -%}
+                <h2 class="raiz-editorial__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+                  {{- block.settings.heading | escape -}}
+                </h2>
+              {%- endif -%}
+            {%- when 'text' -%}
+              <div class="raiz-editorial__body rte" {{ block.shopify_attributes }}>
+                {{ block.settings.text }}
+              </div>
+            {%- when 'quote' -%}
+              {%- if block.settings.quote != blank -%}
+                <figure class="raiz-editorial__quote" {{ block.shopify_attributes }}>
+                  <blockquote>{{ block.settings.quote | escape }}</blockquote>
+                  {%- if block.settings.attribution != blank -%}
+                    <figcaption>{{ block.settings.attribution | escape }}</figcaption>
+                  {%- endif -%}
+                </figure>
+              {%- endif -%}
+            {%- when 'button' -%}
+              {%- if block.settings.label != blank -%}
+                <a
+                  class="button{% if block.settings.style == 'secondary' %} button--secondary{% endif %}"
+                  {% if block.settings.link != blank %}
+                    href="{{ block.settings.link }}"
+                  {% else %}
+                    role="link" aria-disabled="true"
+                  {% endif %}
+                  {{ block.shopify_attributes }}
+                >
+                  {{- block.settings.label | escape -}}
+                </a>
+              {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "RAIZ Editorial",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Main image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Accent image (optional)",
+      "info": "A smaller image that overlaps the main image."
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "label": "Main image ratio",
+      "options": [
+        { "value": "portrait", "label": "Portrait (4:5)" },
+        { "value": "tall", "label": "Tall (2:3)" },
+        { "value": "square", "label": "Square" },
+        { "value": "landscape", "label": "Landscape (4:3)" }
+      ],
+      "default": "portrait"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Image position (desktop)",
+      "options": [
+        { "value": "image-left", "label": "Left" },
+        { "value": "image-right", "label": "Right" }
+      ],
+      "default": "image-left"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 72
+    }
+  ],
+  "blocks": [
+    {
+      "type": "eyebrow",
+      "name": "Eyebrow",
+      "limit": 1,
+      "settings": [
+        { "type": "text", "id": "text", "label": "Text", "default": "Unsere Geschichte" }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        { "type": "text", "id": "heading", "label": "Heading", "default": "Raiz bedeutet Wurzel." },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "label": "Size",
+          "options": [
+            { "value": "h1", "label": "Large" },
+            { "value": "h2", "label": "Medium" },
+            { "value": "h3", "label": "Small" }
+          ],
+          "default": "h1"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Hier erzählst du, woher RAIZ BRAZIL kommt und was die Marke antreibt.</p>"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "name": "Quote",
+      "settings": [
+        { "type": "textarea", "id": "quote", "label": "Quote" },
+        { "type": "text", "id": "attribution", "label": "Attribution" }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label", "default": "Mehr erfahren" },
+        { "type": "url", "id": "link", "label": "Link" },
+        {
+          "type": "select",
+          "id": "style",
+          "label": "Style",
+          "options": [
+            { "value": "primary", "label": "Solid" },
+            { "value": "secondary", "label": "Outline" }
+          ],
+          "default": "secondary"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "RAIZ Editorial",
+      "blocks": [
+        { "type": "eyebrow" },
+        { "type": "heading" },
+        { "type": "text" },
+        { "type": "button" }
+      ]
+    }
+  ]
+}
+{% endschema %}

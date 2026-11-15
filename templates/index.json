@@ -1,0 +1,319 @@
+{
+  "sections": {
+    "hero": {
+      "type": "raiz-hero",
+      "settings": {
+        "eyebrow": "Brasilianischer Lifestyle",
+        "heading": "A LITTLE PIECE OF BRAZIL.",
+        "text": "Entdecke authentische brasilianische Beachwear, wunderschöne Textilien und kleine Fluchten für jeden Tag.",
+        "button_label_1": "Jetzt entdecken",
+        "button_link_1": "shopify://collections/all",
+        "button_label_2": "",
+        "button_link_2": "",
+        "height": "large",
+        "vertical_position": "bottom",
+        "horizontal_position": "left",
+        "text_tone": "light",
+        "overlay_opacity": 35
+      }
+    },
+    "intro": {
+      "type": "raiz-editorial",
+      "blocks": {
+        "eyebrow": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "Willkommen bei RAIZ BRAZIL"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ein Stück Brasilien für dein Zuhause.",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>RAIZ BRAZIL bringt brasilianische Beachwear, Textilien und Lifestyle-Essentials nach Deutschland – mit Liebe zum Detail und dem Gefühl von Sommer.</p><p>Entdecke Stücke für Strandtage, Reisen und die kleinen Fluchten im Alltag.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "label": "Unsere Geschichte",
+            "link": "shopify://pages/ueber-uns",
+            "style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "eyebrow",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image_ratio": "portrait",
+        "layout": "image-left",
+        "color_scheme": "scheme-1",
+        "padding_top": 88,
+        "padding_bottom": 88
+      }
+    },
+    "collections": {
+      "type": "raiz-collection-tiles",
+      "blocks": {
+        "t1": {
+          "type": "collection",
+          "settings": {
+            "title": "Beachwear",
+            "subtitle": "Für Strand, Pool und Reise"
+          }
+        },
+        "t2": {
+          "type": "collection",
+          "settings": {
+            "title": "Beach & Living",
+            "subtitle": "Hängematten, Strandtücher & mehr"
+          }
+        },
+        "t3": {
+          "type": "collection",
+          "settings": {
+            "title": "Brazilian Beauty",
+            "subtitle": "Natürliche Schönheit aus Brasilien"
+          }
+        },
+        "t4": {
+          "type": "collection",
+          "settings": {
+            "title": "Neuheiten",
+            "subtitle": "Frisch eingetroffen"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "eyebrow": "Kollektionen",
+        "heading": "Entdecke RAIZ BRAZIL",
+        "columns_desktop": "4",
+        "columns_mobile": "2",
+        "image_ratio": "portrait",
+        "stagger": true,
+        "color_scheme": "scheme-2",
+        "padding_top": 88,
+        "padding_bottom": 88
+      }
+    },
+    "bestsellers": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Bestseller",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "swipe_on_mobile": false,
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "lifestyle": {
+      "type": "raiz-editorial",
+      "blocks": {
+        "eyebrow": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "Beach & Living"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Slow Summer – überall, wo du willst.",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hängematten, Strandtücher und Textilien, die jeden Ort in einen kleinen Urlaubsmoment verwandeln: im Garten, auf dem Balkon oder am See.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "label": "Beach & Living entdecken",
+            "link": "shopify://collections/beach-living",
+            "style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "eyebrow",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image_ratio": "tall",
+        "layout": "image-right",
+        "color_scheme": "scheme-2",
+        "padding_top": 88,
+        "padding_bottom": 88
+      }
+    },
+    "story": {
+      "type": "raiz-editorial",
+      "blocks": {
+        "eyebrow": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "Unsere Wurzeln"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Raiz heißt Wurzel.",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Auf Portugiesisch bedeutet „raiz“ Wurzel. Der Name steht für das, was uns antreibt: brasilianische Wurzeln, Kreativität, Handwerk, Farbe und das Gefühl von Sommer.</p><p>Wir erzählen Brasilien warm, modern und ohne Klischees.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "label": "Zur Geschichte",
+            "link": "shopify://pages/ueber-uns",
+            "style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "eyebrow",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image_ratio": "portrait",
+        "layout": "image-left",
+        "color_scheme": "scheme-3",
+        "padding_top": 88,
+        "padding_bottom": 88
+      }
+    },
+    "trust": {
+      "type": "raiz-trust-bar",
+      "blocks": {
+        "a": {
+          "type": "item",
+          "settings": {
+            "icon": "sun",
+            "title": "Brasilianische Inspiration",
+            "text": "Beachwear, Textilien und Lifestyle für den Sommer."
+          }
+        },
+        "b": {
+          "type": "item",
+          "settings": {
+            "icon": "package",
+            "title": "Versand & Rückgabe",
+            "text": "Alle Infos findest du auf unserer Seite Versand & Rückgabe."
+          }
+        },
+        "c": {
+          "type": "item",
+          "settings": {
+            "icon": "lock",
+            "title": "Sicher bezahlen",
+            "text": "Checkout über Shopify mit den im Shop angebotenen Zahlungsarten."
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "b",
+        "c"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Post aus Brasilien",
+            "heading_size": "h1"
+          }
+        },
+        "p": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Neuheiten, Inspiration und Einblicke – direkt in dein Postfach.</p>"
+          }
+        },
+        "f": {
+          "type": "email_form"
+        },
+        "c": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Mit der Anmeldung willigst du in den Erhalt unseres Newsletters ein. Du kannst dich jederzeit abmelden. Mehr dazu in unserer <a href=\"/policies/privacy-policy\">Datenschutzerklärung</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "h",
+        "p",
+        "f",
+        "c"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "intro",
+    "collections",
+    "bestsellers",
+    "lifestyle",
+    "story",
+    "trust",
+    "newsletter"
+  ]
+}

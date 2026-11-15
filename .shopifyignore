@@ -1,0 +1,5 @@
+# Files excluded from `shopify theme push` / dev sync
+.github/
+README.md
+package.json
+node_modules/

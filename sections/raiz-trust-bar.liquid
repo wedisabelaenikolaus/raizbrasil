@@ -1,0 +1,75 @@
+{{ 'section-raiz-trust.css' | asset_url | stylesheet_tag }}
+
+<div class="raiz-trust color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width">
+    <ul class="raiz-trust__list raiz-trust__list--{{ section.blocks.size }}" role="list">
+      {%- for block in section.blocks -%}
+        <li class="raiz-trust__item" {{ block.shopify_attributes }}>
+          {%- if block.settings.icon != 'none' -%}
+            {% render 'raiz-icon', name: block.settings.icon %}
+          {%- endif -%}
+          <div>
+            {%- if block.settings.title != blank -%}
+              <p class="raiz-trust__title">{{ block.settings.title | escape }}</p>
+            {%- endif -%}
+            {%- if block.settings.text != blank -%}
+              <p class="raiz-trust__text">{{ block.settings.text | escape }}</p>
+            {%- endif -%}
+          </div>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "RAIZ Trust bar",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "scheme-2"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            { "value": "none", "label": "None" },
+            { "value": "sun", "label": "Sun" },
+            { "value": "leaf", "label": "Leaf" },
+            { "value": "package", "label": "Package" },
+            { "value": "lock", "label": "Lock" },
+            { "value": "heart", "label": "Heart" },
+            { "value": "globe", "label": "Globe" }
+          ],
+          "default": "sun"
+        },
+        { "type": "text", "id": "title", "label": "Title", "default": "Mit Sorgfalt ausgewählt" },
+        { "type": "text", "id": "text", "label": "Text", "default": "Kurzer Text, vom Shop-Betreiber zu ergänzen." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "RAIZ Trust bar",
+      "blocks": [
+        { "type": "item" },
+        { "type": "item" },
+        { "type": "item" }
+      ]
+    }
+  ]
+}
+{% endschema %}

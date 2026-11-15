@@ -1,0 +1,146 @@
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "blocks": {
+        "c": {
+          "type": "caption",
+          "settings": {
+            "text": "Hilfe",
+            "text_style": "uppercase",
+            "text_size": "medium"
+          }
+        },
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Häufige Fragen",
+            "heading_size": "h0"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hier findest du Antworten auf die wichtigsten Fragen rund um deine Bestellung.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "c",
+        "h",
+        "t"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 24
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "q0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie lange dauert der Versand und was kostet er?",
+            "icon": "none",
+            "row_content": "<p>Alle Informationen zu Lieferzeiten, Versandkosten und Lieferländern findest du auf der Seite <a href=\"/policies/shipping-policy\">Versand</a>.</p>",
+            "page": ""
+          }
+        },
+        "q1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kann ich Artikel zurückgeben oder umtauschen?",
+            "icon": "none",
+            "row_content": "<p>Details zu Widerruf und Rückgabe findest du in der <a href=\"/policies/refund-policy\">Widerrufsbelehrung</a>.</p>",
+            "page": ""
+          }
+        },
+        "q2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Welche Zahlungsarten gibt es?",
+            "icon": "none",
+            "row_content": "<p>Die verfügbaren Zahlungsarten siehst du an der Kasse und in der Fußzeile unseres Shops.</p>",
+            "page": ""
+          }
+        },
+        "q3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie finde ich die passende Größe?",
+            "icon": "none",
+            "row_content": "<p>Die verfügbaren Größen und Produktdetails stehen auf der jeweiligen Produktseite. Bei Fragen schreib uns gern über das <a href=\"/pages/kontakt\">Kontaktformular</a>.</p>",
+            "page": ""
+          }
+        },
+        "q4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie pflege ich meine Produkte?",
+            "icon": "none",
+            "row_content": "<p>Bitte beachte die Pflegehinweise auf der Produktseite und auf dem Etikett des Produkts.</p>",
+            "page": ""
+          }
+        },
+        "q5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie sehe ich den Status meiner Bestellung?",
+            "icon": "none",
+            "row_content": "<p>Wenn du ein Kundenkonto hast, findest du deine Bestellungen in deinem <a href=\"/account\">Konto</a>. Außerdem informieren wir dich per E-Mail.</p>",
+            "page": ""
+          }
+        },
+        "q6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie kann ich euch erreichen?",
+            "icon": "none",
+            "row_content": "<p>Über unsere <a href=\"/pages/kontakt\">Kontaktseite</a> erreichst du uns jederzeit.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "q0",
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "color_scheme": "scheme-1",
+        "padding_top": 24,
+        "padding_bottom": 72
+      }
+    },
+    "notice": {
+      "type": "raiz-owner-notice",
+      "settings": {
+        "title": "Hinweis für Shop-Betreiber",
+        "text": "<p>Die Antworten verweisen bewusst auf Ihre Shop-Richtlinien. Ergänzen Sie konkrete Angaben (Lieferzeiten, Kosten, Rückgabefristen) erst, wenn diese feststehen und rechtlich geprüft sind.</p>"
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "faq",
+    "notice"
+  ]
+}

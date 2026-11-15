@@ -1,0 +1,12 @@
+{
+  "name": "raiz-brazil-theme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RAIZ BRAZIL – Shopify Online Store 2.0 theme (based on Shopify Dawn, MIT)",
+  "license": "MIT",
+  "scripts": {
+    "check": "shopify theme check",
+    "dev": "shopify theme dev",
+    "validate": "node scripts/validate.js"
+  }
+}

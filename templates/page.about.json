@@ -1,0 +1,206 @@
+{
+  "sections": {
+    "hero": {
+      "type": "raiz-hero",
+      "settings": {
+        "eyebrow": "Über uns",
+        "heading": "Raiz heißt Wurzel.",
+        "text": "Die Geschichte hinter RAIZ BRAZIL: brasilianische Wurzeln, Handwerk und das Gefühl von Sommer.",
+        "button_label_1": "",
+        "button_label_2": "",
+        "height": "medium",
+        "vertical_position": "bottom",
+        "horizontal_position": "left",
+        "text_tone": "light",
+        "overlay_opacity": 40
+      }
+    },
+    "notice": {
+      "type": "raiz-owner-notice",
+      "settings": {
+        "title": "Hinweis für Shop-Betreiber",
+        "text": "<p>Bitte ergänzen: echte Fotos, Namen, Orte und Fakten zu Gründung, Herkunft der Produkte und Partnern. Keine Angaben zu Handwerkern, Herstellern oder Zertifikaten verwenden, die nicht belegt sind.</p>"
+      }
+    },
+    "origins": {
+      "type": "raiz-editorial",
+      "blocks": {
+        "eyebrow": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "Brasilianische Wurzeln"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Woher wir kommen",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>RAIZ BRAZIL ist eine Marke mit brasilianischen Wurzeln und Sitz in Deutschland. Wir feiern, was Brasilien ausmacht: Kreativität, Farbe, Lebensfreude und die Leichtigkeit des Sommers.</p><p>Unsere Auswahl soll sich nicht wie ein Klischee anfühlen, sondern wie ein persönliches Mitbringsel – warm, modern und mit Sinn für Qualität.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "eyebrow",
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image_ratio": "portrait",
+        "layout": "image-left",
+        "color_scheme": "scheme-1",
+        "padding_top": 88,
+        "padding_bottom": 88
+      }
+    },
+    "values": {
+      "type": "multicolumn",
+      "blocks": {
+        "c1": {
+          "type": "column",
+          "settings": {
+            "title": "Wurzeln",
+            "text": "<p>Brasilien ist unser Ursprung und unsere Inspiration.</p>"
+          }
+        },
+        "c2": {
+          "type": "column",
+          "settings": {
+            "title": "Handwerk",
+            "text": "<p>Wir achten auf Details, Materialien und Verarbeitung.</p>"
+          }
+        },
+        "c3": {
+          "type": "column",
+          "settings": {
+            "title": "Farbe",
+            "text": "<p>Warme Töne, die an Strand, Natur und Sonne erinnern.</p>"
+          }
+        },
+        "c4": {
+          "type": "column",
+          "settings": {
+            "title": "Sommer",
+            "text": "<p>Ein Gefühl von Urlaub – auch mitten im Alltag.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "settings": {
+        "title": "Wofür wir stehen",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "artisans": {
+      "type": "raiz-editorial",
+      "blocks": {
+        "eyebrow": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "Handwerk & Menschen"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mit Sorgfalt ausgewählt",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hinter schönen Dingen stehen Menschen, Ideen und Handwerk. Uns ist wichtig, die Geschichten unserer Produkte ehrlich und respektvoll zu erzählen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "eyebrow",
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image_ratio": "portrait",
+        "layout": "image-right",
+        "color_scheme": "scheme-1",
+        "padding_top": 88,
+        "padding_bottom": 88
+      }
+    },
+    "bridge": {
+      "type": "raiz-editorial",
+      "blocks": {
+        "eyebrow": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "Brasilien & Deutschland"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Eine Brücke zwischen zwei Welten",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wir verbinden Brasilien und Deutschland: das Lebensgefühl des brasilianischen Sommers mit dem Anspruch an Qualität und Verlässlichkeit, den wir hier schätzen.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "label": "Zum Shop",
+            "link": "shopify://collections/all",
+            "style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "eyebrow",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image_ratio": "portrait",
+        "layout": "image-left",
+        "color_scheme": "scheme-3",
+        "padding_top": 88,
+        "padding_bottom": 88
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "notice",
+    "origins",
+    "values",
+    "artisans",
+    "bridge"
+  ]
+}

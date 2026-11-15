@@ -1,0 +1,16 @@
+# Theme Check configuration – https://shopify.dev/docs/storefronts/themes/tools/theme-check
+extends: theme-check:recommended
+
+# Known false positives / upstream Dawn constructs, kept visible on purpose:
+# - UndefinedObject: `scheme_classes` is built by an append loop, `continue` is a Liquid for-loop keyword.
+UndefinedObject:
+  enabled: true
+  ignore:
+    - layout/theme.liquid
+    - layout/password.liquid
+    - sections/main-product.liquid
+
+# Dawn's facets snippet is intentionally large (upstream).
+LiquidComplexity:
+  ignore:
+    - snippets/facets.liquid

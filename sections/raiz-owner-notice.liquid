@@ -1,0 +1,33 @@
+{%- comment -%}
+  Notice that is visible ONLY inside the Shopify theme editor (never to customers).
+  Used to flag content the shop owner must supply or have legally reviewed.
+{%- endcomment -%}
+{%- if request.design_mode -%}
+  <div class="page-width">
+    <aside class="raiz-owner-notice" role="note">
+      <p class="raiz-owner-notice__title">{{ section.settings.title | escape }}</p>
+      <div class="rte">{{ section.settings.text }}</div>
+      <p class="raiz-owner-notice__hint">Only visible in the theme editor – hidden from customers. Delete this section when done.</p>
+    </aside>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Owner notice",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Title", "default": "Hinweis für Shop-Betreiber" },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Dieser Inhalt muss vom Betreiber bereitgestellt und rechtlich geprüft werden.</p>"
+    }
+  ],
+  "presets": [
+    { "name": "Owner notice" }
+  ]
+}
+{% endschema %}

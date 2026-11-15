@@ -1,0 +1,158 @@
+{{ 'section-raiz-tiles.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="raiz-tiles color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding">
+    {%- if section.settings.eyebrow != blank or section.settings.heading != blank -%}
+      <header class="raiz-tiles__header">
+        {%- if section.settings.eyebrow != blank -%}
+          <p class="raiz-eyebrow">{{ section.settings.eyebrow | escape }}</p>
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}
+          <h2 class="raiz-tiles__heading h1">{{ section.settings.heading | escape }}</h2>
+        {%- endif -%}
+      </header>
+    {%- endif -%}
+
+    <ul
+      class="raiz-tiles__grid raiz-tiles__grid--{{ section.settings.columns_desktop }} raiz-tiles__grid--m{{ section.settings.columns_mobile }}{% if section.settings.stagger %} raiz-tiles__grid--stagger{% endif %} raiz-ratio--{{ section.settings.image_ratio }}"
+      role="list"
+    >
+      {%- for block in section.blocks -%}
+        {%- assign col = block.settings.collection -%}
+        {%- assign tile_image = block.settings.image | default: col.featured_image -%}
+        {%- assign tile_title = block.settings.title | default: col.title -%}
+        <li class="raiz-tile" {{ block.shopify_attributes }}>
+          <a
+            class="raiz-tile__link"
+            {% if col != blank %}
+              href="{{ col.url }}"
+            {% else %}
+              role="link" aria-disabled="true"
+            {% endif %}
+          >
+            <span class="raiz-tile__media">
+              {% render 'raiz-image',
+                image: tile_image,
+                placeholder: 'collection-1',
+                sizes: '(min-width: 990px) 30vw, 50vw',
+                widths: '375, 550, 750, 1100, 1500'
+              %}
+            </span>
+            <span class="raiz-tile__label">
+              <span class="raiz-tile__title">
+                {%- if tile_title != blank -%}
+                  {{ tile_title | escape }}
+                {%- else -%}
+                  {{ 'raiz.tiles.placeholder_title' | t }}
+                {%- endif -%}
+              </span>
+              {%- if block.settings.subtitle != blank -%}
+                <span class="raiz-tile__subtitle">{{ block.settings.subtitle | escape }}</span>
+              {%- endif -%}
+              <span class="raiz-tile__cta">
+                {{- 'raiz.tiles.discover' | t -}}
+                <span aria-hidden="true" class="raiz-tile__arrow">&rarr;</span>
+              </span>
+            </span>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "RAIZ Collection tiles",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 8,
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Kollektionen" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Entdecke RAIZ BRAZIL" },
+    {
+      "type": "select",
+      "id": "columns_desktop",
+      "label": "Columns (desktop)",
+      "options": [
+        { "value": "2", "label": "2" },
+        { "value": "3", "label": "3" },
+        { "value": "4", "label": "4" }
+      ],
+      "default": "4"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns (mobile)",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "label": "Image ratio",
+      "options": [
+        { "value": "portrait", "label": "Portrait (4:5)" },
+        { "value": "tall", "label": "Tall (2:3)" },
+        { "value": "square", "label": "Square" }
+      ],
+      "default": "portrait"
+    },
+    {
+      "type": "checkbox",
+      "id": "stagger",
+      "label": "Staggered editorial layout (desktop)",
+      "default": true
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "scheme-1"
+    },
+    { "type": "header", "content": "Spacing" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 120, "step": 4, "unit": "px", "label": "Top padding", "default": 72 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 120, "step": 4, "unit": "px", "label": "Bottom padding", "default": 72 }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        { "type": "collection", "id": "collection", "label": "Collection" },
+        { "type": "text", "id": "title", "label": "Title override", "info": "Leave empty to use the collection title." },
+        { "type": "text", "id": "subtitle", "label": "Short description" },
+        { "type": "image_picker", "id": "image", "label": "Image override", "info": "Leave empty to use the collection image." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "RAIZ Collection tiles",
+      "blocks": [
+        { "type": "collection" },
+        { "type": "collection" },
+        { "type": "collection" },
+        { "type": "collection" }
+      ]
+    }
+  ]
+}
+{% endschema %}

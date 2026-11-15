@@ -1,0 +1,40 @@
+{% doc %}
+  Renders a responsive image, or a Shopify placeholder illustration when no image is set.
+  Never outputs fabricated photography.
+
+  @param {image} [image] - Image from an image_picker setting or product/collection.
+  @param {string} [placeholder] - Name of the placeholder SVG (e.g. `hero-apparel-1`, `lifestyle-1`, `collection-1`).
+  @param {string} [sizes] - The `sizes` attribute. Defaults to `100vw`.
+  @param {string} [widths] - Comma separated list of srcset widths.
+  @param {string} [loading] - `lazy` (default) or `eager`.
+  @param {string} [priority] - `auto` (default) or `high`.
+  @param {string} [class] - CSS class for the img element.
+
+  @example
+  {% render 'raiz-image', image: section.settings.image, placeholder: 'lifestyle-1', sizes: '(min-width: 990px) 50vw, 100vw' %}
+{% enddoc %}
+
+{%- liquid
+  assign img_loading = loading | default: 'lazy'
+  assign img_priority = priority | default: 'auto'
+  assign img_sizes = sizes | default: '100vw'
+  assign img_widths = widths | default: '375, 550, 750, 1100, 1500, 2000, 2600'
+  assign img_placeholder = placeholder | default: 'image'
+  assign focal_style = 'object-position: ' | append: image.presentation.focal_point
+-%}
+
+{%- if image != blank -%}
+  {{
+    image
+    | image_url: width: 2600
+    | image_tag:
+      loading: img_loading,
+      fetchpriority: img_priority,
+      sizes: img_sizes,
+      widths: img_widths,
+      class: class,
+      style: focal_style
+  }}
+{%- else -%}
+  {{ img_placeholder | placeholder_svg_tag: 'placeholder-svg' }}
+{%- endif -%}
