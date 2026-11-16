@@ -181,3 +181,66 @@ h3,
     transition: none !important;
   }
 }
+
+/* ==== Design refinements ================================================== */
+::selection { background: var(--raiz-terracotta); color: #fff; }
+
+/* Eyebrow with a fine leading rule for editorial rhythm */
+.raiz-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 2.4rem;
+  height: 1px;
+  margin-right: 1.2rem;
+  vertical-align: middle;
+  background: currentColor;
+  opacity: 0.6;
+}
+.raiz-tiles__header .raiz-eyebrow::after {
+  content: '';
+  display: inline-block;
+  width: 2.4rem;
+  height: 1px;
+  margin-left: 1.2rem;
+  vertical-align: middle;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+/* Elegant empty states: warm sand wash instead of Shopify's blue illustrations */
+.placeholder-svg {
+  background: linear-gradient(160deg, #efe6d6 0%, #e2d3ba 100%);
+  fill: rgba(168, 73, 46, 0.35);
+  color: rgba(168, 73, 46, 0.35);
+}
+
+/* Links in rich text */
+.rte a,
+.footer a:not(.button) {
+  text-underline-offset: 0.35em;
+  text-decoration-thickness: 1px;
+}
+
+/* Footer brand block */
+.footer-block__details-content h2,
+.footer-block--text .footer-block__heading {
+  font-family: var(--font-heading-family);
+  font-size: calc(var(--font-heading-scale) * 2.8rem);
+  letter-spacing: 0.08em;
+  text-transform: none;
+}
+
+/* Product cards: calmer, gallery-like */
+.card-wrapper .card__inner { border-radius: 0; }
+.card--standard .card__information { padding-top: 1.4rem; }
+.price--on-sale .price-item--regular { opacity: 0.6; }
+.price-item--sale { color: var(--raiz-terracotta); }
+
+/* Thin section dividers that echo the brand's editorial feel */
+.shopify-section + .shopify-section .raiz-tiles,
+.shopify-section-group-footer-group { border-top: 0; }
+
+/* Cart / forms: sharper, more refined fields */
+.field__input,
+.select__select,
+.customer .field input { letter-spacing: 0.02em; }

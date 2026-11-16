@@ -3,8 +3,8 @@
     "notice": {
       "type": "raiz-owner-notice",
       "settings": {
-        "title": "Hinweis für Shop-Betreiber",
-        "text": "<p>Rechtstext (Impressum, Datenschutz, Widerruf, AGB, Versand &amp; Rückgabe) wird im Shopify-Admin unter <em>Seiten</em> bzw. <em>Einstellungen &gt; Richtlinien</em> gepflegt. Die Inhalte müssen vom Betreiber bereitgestellt und von einer rechtskundigen Person geprüft werden. Dieses Theme enthält keine Rechtstexte.</p>"
+        "title": "Note for shop owner",
+        "text": "<p>Legal texts (Impressum, privacy policy, withdrawal, terms, shipping &amp; returns) are maintained in the Shopify admin under <em>Pages</em> or <em>Settings &gt; Policies</em>. The content must be provided by the owner and reviewed by a qualified person. This theme contains no legal texts.</p>"
       }
     },
     "main": {

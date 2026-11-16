@@ -9,13 +9,13 @@
           "type": "text",
           "settings": {
             "heading": "RAIZ BRAZIL",
-            "subtext": "<p>Ein Stück Brasilien für dein Zuhause.</p>"
+            "subtext": "<p>A little piece of Brazil, delivered to your home.</p>"
           }
         },
         "links": {
           "type": "link_list",
           "settings": {
-            "heading": "Service",
+            "heading": "Help",
             "menu": "footer"
           }
         }

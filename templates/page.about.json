@@ -3,9 +3,9 @@
     "hero": {
       "type": "raiz-hero",
       "settings": {
-        "eyebrow": "Über uns",
-        "heading": "Raiz heißt Wurzel.",
-        "text": "Die Geschichte hinter RAIZ BRAZIL: brasilianische Wurzeln, Handwerk und das Gefühl von Sommer.",
+        "eyebrow": "About us",
+        "heading": "Raiz means root.",
+        "text": "The story behind RAIZ BRAZIL: Brazilian roots, craftsmanship and the feeling of summer.",
         "button_label_1": "",
         "button_label_2": "",
         "height": "medium",
@@ -18,8 +18,8 @@
     "notice": {
       "type": "raiz-owner-notice",
       "settings": {
-        "title": "Hinweis für Shop-Betreiber",
-        "text": "<p>Bitte ergänzen: echte Fotos, Namen, Orte und Fakten zu Gründung, Herkunft der Produkte und Partnern. Keine Angaben zu Handwerkern, Herstellern oder Zertifikaten verwenden, die nicht belegt sind.</p>"
+        "title": "Note for shop owner",
+        "text": "<p>Please add: real photos, names, places and facts about the founding, product origin and partners. Do not use claims about artisans, manufacturers or certifications that cannot be verified.</p>"
       }
     },
     "origins": {
@@ -28,20 +28,20 @@
         "eyebrow": {
           "type": "eyebrow",
           "settings": {
-            "text": "Brasilianische Wurzeln"
+            "text": "Brazilian roots"
           }
         },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Woher wir kommen",
+            "heading": "Where we come from",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>RAIZ BRAZIL ist eine Marke mit brasilianischen Wurzeln und Sitz in Deutschland. Wir feiern, was Brasilien ausmacht: Kreativität, Farbe, Lebensfreude und die Leichtigkeit des Sommers.</p><p>Unsere Auswahl soll sich nicht wie ein Klischee anfühlen, sondern wie ein persönliches Mitbringsel – warm, modern und mit Sinn für Qualität.</p>"
+            "text": "<p>RAIZ BRAZIL is a brand with Brazilian roots, based in Germany. We celebrate what makes Brazil special: creativity, colour, joie de vivre and the lightness of summer.</p><p>Our selection should not feel like a cliché, but like a personal souvenir – warm, modern and with a sense of quality.</p>"
           }
         }
       },
@@ -64,29 +64,29 @@
         "c1": {
           "type": "column",
           "settings": {
-            "title": "Wurzeln",
-            "text": "<p>Brasilien ist unser Ursprung und unsere Inspiration.</p>"
+            "title": "Roots",
+            "text": "<p>Brazil is our origin and our inspiration.</p>"
           }
         },
         "c2": {
           "type": "column",
           "settings": {
-            "title": "Handwerk",
-            "text": "<p>Wir achten auf Details, Materialien und Verarbeitung.</p>"
+            "title": "Craft",
+            "text": "<p>We care about details, materials and finishing.</p>"
           }
         },
         "c3": {
           "type": "column",
           "settings": {
-            "title": "Farbe",
-            "text": "<p>Warme Töne, die an Strand, Natur und Sonne erinnern.</p>"
+            "title": "Colour",
+            "text": "<p>Warm tones that recall beach, nature and sun.</p>"
           }
         },
         "c4": {
           "type": "column",
           "settings": {
-            "title": "Sommer",
-            "text": "<p>Ein Gefühl von Urlaub – auch mitten im Alltag.</p>"
+            "title": "Summer",
+            "text": "<p>A feeling of holiday – even in the middle of everyday life.</p>"
           }
         }
       },
@@ -97,7 +97,7 @@
         "c4"
       ],
       "settings": {
-        "title": "Wofür wir stehen",
+        "title": "What we stand for",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "adapt",
@@ -119,20 +119,20 @@
         "eyebrow": {
           "type": "eyebrow",
           "settings": {
-            "text": "Handwerk & Menschen"
+            "text": "Craft & people"
           }
         },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Mit Sorgfalt ausgewählt",
+            "heading": "Carefully selected",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Hinter schönen Dingen stehen Menschen, Ideen und Handwerk. Uns ist wichtig, die Geschichten unserer Produkte ehrlich und respektvoll zu erzählen.</p>"
+            "text": "<p>Behind beautiful things there are people, ideas and craftsmanship. It matters to us to tell the stories of our products honestly and respectfully.</p>"
           }
         }
       },
@@ -155,26 +155,26 @@
         "eyebrow": {
           "type": "eyebrow",
           "settings": {
-            "text": "Brasilien & Deutschland"
+            "text": "Brazil & Germany"
           }
         },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Eine Brücke zwischen zwei Welten",
+            "heading": "A bridge between two worlds",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Wir verbinden Brasilien und Deutschland: das Lebensgefühl des brasilianischen Sommers mit dem Anspruch an Qualität und Verlässlichkeit, den wir hier schätzen.</p>"
+            "text": "<p>We connect Brazil and Germany: the spirit of the Brazilian summer with the standards of quality and reliability we value here.</p>"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "label": "Zum Shop",
+            "label": "Shop the collection",
             "link": "shopify://collections/all",
             "style": "secondary"
           }

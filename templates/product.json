@@ -39,16 +39,16 @@
         "delivery": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Lieferung & Rückgabe",
+            "heading": "Delivery & returns",
             "icon": "truck",
-            "content": "<p>Informationen zu Lieferzeiten, Versandkosten, Widerruf und Rückgabe findest du auf unserer Seite <a href=\"/policies/shipping-policy\">Versand</a> und in der <a href=\"/policies/refund-policy\">Widerrufsbelehrung</a>.</p>",
+            "content": "<p>Details on delivery times, shipping costs, withdrawal and returns can be found on our <a href=\"/policies/shipping-policy\">shipping policy</a> and <a href=\"/policies/refund-policy\">return policy</a> pages.</p>",
             "page": ""
           }
         },
         "share": {
           "type": "share",
           "settings": {
-            "share_label": "Teilen"
+            "share_label": "Share"
           }
         }
       },
@@ -82,7 +82,7 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "Das könnte dir auch gefallen",
+        "heading": "You may also like",
         "heading_size": "h1",
         "products_to_show": 4,
         "columns_desktop": 4,

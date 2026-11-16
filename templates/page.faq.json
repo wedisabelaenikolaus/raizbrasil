@@ -6,7 +6,7 @@
         "c": {
           "type": "caption",
           "settings": {
-            "text": "Hilfe",
+            "text": "Help",
             "text_style": "uppercase",
             "text_size": "medium"
           }
@@ -14,14 +14,14 @@
         "h": {
           "type": "heading",
           "settings": {
-            "heading": "Häufige Fragen",
+            "heading": "Frequently asked questions",
             "heading_size": "h0"
           }
         },
         "t": {
           "type": "text",
           "settings": {
-            "text": "<p>Hier findest du Antworten auf die wichtigsten Fragen rund um deine Bestellung.</p>"
+            "text": "<p>Here you will find answers to the most common questions about your order.</p>"
           }
         }
       },
@@ -45,63 +45,63 @@
         "q0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Wie lange dauert der Versand und was kostet er?",
+            "heading": "How long does shipping take and what does it cost?",
             "icon": "none",
-            "row_content": "<p>Alle Informationen zu Lieferzeiten, Versandkosten und Lieferländern findest du auf der Seite <a href=\"/policies/shipping-policy\">Versand</a>.</p>",
+            "row_content": "<p>You will find all information on delivery times, shipping costs and destination countries on our <a href=\"/policies/shipping-policy\">shipping policy</a> page.</p>",
             "page": ""
           }
         },
         "q1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Kann ich Artikel zurückgeben oder umtauschen?",
+            "heading": "Can I return or exchange items?",
             "icon": "none",
-            "row_content": "<p>Details zu Widerruf und Rückgabe findest du in der <a href=\"/policies/refund-policy\">Widerrufsbelehrung</a>.</p>",
+            "row_content": "<p>Details on withdrawal and returns are in our <a href=\"/policies/refund-policy\">return policy</a>.</p>",
             "page": ""
           }
         },
         "q2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Welche Zahlungsarten gibt es?",
+            "heading": "Which payment methods are available?",
             "icon": "none",
-            "row_content": "<p>Die verfügbaren Zahlungsarten siehst du an der Kasse und in der Fußzeile unseres Shops.</p>",
+            "row_content": "<p>Available payment methods are shown at checkout and in the footer of our shop.</p>",
             "page": ""
           }
         },
         "q3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Wie finde ich die passende Größe?",
+            "heading": "How do I find the right size?",
             "icon": "none",
-            "row_content": "<p>Die verfügbaren Größen und Produktdetails stehen auf der jeweiligen Produktseite. Bei Fragen schreib uns gern über das <a href=\"/pages/kontakt\">Kontaktformular</a>.</p>",
+            "row_content": "<p>Available sizes and product details are listed on each product page. If you have questions, write to us via the <a href=\"/pages/contact\">contact form</a>.</p>",
             "page": ""
           }
         },
         "q4": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Wie pflege ich meine Produkte?",
+            "heading": "How do I care for my products?",
             "icon": "none",
-            "row_content": "<p>Bitte beachte die Pflegehinweise auf der Produktseite und auf dem Etikett des Produkts.</p>",
+            "row_content": "<p>Please follow the care instructions on the product page and on the product label.</p>",
             "page": ""
           }
         },
         "q5": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Wie sehe ich den Status meiner Bestellung?",
+            "heading": "How can I check the status of my order?",
             "icon": "none",
-            "row_content": "<p>Wenn du ein Kundenkonto hast, findest du deine Bestellungen in deinem <a href=\"/account\">Konto</a>. Außerdem informieren wir dich per E-Mail.</p>",
+            "row_content": "<p>If you have a customer account, you can find your orders in your <a href=\"/account\">account</a>. We also keep you informed by email.</p>",
             "page": ""
           }
         },
         "q6": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Wie kann ich euch erreichen?",
+            "heading": "How can I contact you?",
             "icon": "none",
-            "row_content": "<p>Über unsere <a href=\"/pages/kontakt\">Kontaktseite</a> erreichst du uns jederzeit.</p>",
+            "row_content": "<p>You can reach us any time via our <a href=\"/pages/contact\">contact page</a>.</p>",
             "page": ""
           }
         }
@@ -133,8 +133,8 @@
     "notice": {
       "type": "raiz-owner-notice",
       "settings": {
-        "title": "Hinweis für Shop-Betreiber",
-        "text": "<p>Die Antworten verweisen bewusst auf Ihre Shop-Richtlinien. Ergänzen Sie konkrete Angaben (Lieferzeiten, Kosten, Rückgabefristen) erst, wenn diese feststehen und rechtlich geprüft sind.</p>"
+        "title": "Note for shop owner",
+        "text": "<p>The answers deliberately point to your shop policies. Add concrete details (delivery times, costs, return periods) only once they are final and legally reviewed.</p>"
       }
     }
   },

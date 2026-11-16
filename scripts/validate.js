@@ -27,6 +27,6 @@ for (const f of [...list('templates', '.json'), ...list('sections', '.json')]) {
     if (!sections.has(s.type)) fail(`${f}: section "${id}" uses missing type "${s.type}"`);
   }
 }
-if (!fs.existsSync(path.join(root, 'locales/de.default.json'))) fail('locales/de.default.json missing (German must be default)');
+if (!fs.existsSync(path.join(root, 'locales/en.default.json'))) fail('locales/en.default.json missing (English must be default)');
 console.log(errors ? `\n${errors} problem(s)` : '✓ JSON, JS, CSS and template references look valid');
 process.exit(errors ? 1 : 0);

@@ -1,6 +1,6 @@
 # RAIZ BRAZIL – Shopify Theme
 
-Shopify Online Store 2.0 theme for **RAIZ BRAZIL**: an editorial, modern tropical boutique for Brazilian beachwear, beach & living and (later) Brazilian beauty. German is the primary language; English and Brazilian Portuguese are prepared.
+Shopify Online Store 2.0 theme for **RAIZ BRAZIL**: an editorial, modern tropical boutique for Brazilian beachwear, beach & living and (later) Brazilian beauty. English is the default language; German and Brazilian Portuguese translations are included.
 
 Built on [Shopify Dawn](https://github.com/Shopify/dawn) (MIT, see `LICENSE.md`). All native Shopify functionality – products, variants, collections with filtering, cart, predictive search, customer accounts, localization (Markets), checkout – is untouched Dawn code. No build step, no dependencies: Liquid, JSON templates, CSS and vanilla JS.
 
@@ -11,9 +11,9 @@ Built on [Shopify Dawn](https://github.com/Shopify/dawn) (MIT, see `LICENSE.md`)
 | Brand design tokens & overrides | `assets/raiz-base.css`, colour schemes/fonts in `config/settings_data.json` |
 | New sections | `raiz-hero`, `raiz-editorial`, `raiz-collection-tiles`, `raiz-trust-bar`, `raiz-owner-notice` (editor-only) |
 | Snippets | `raiz-image` (responsive image / placeholder), `raiz-icon` |
-| Templates (German content) | `index`, `product`, `collection`, `page.about`, `page.faq`, `page.contact`, `page.legal` |
+| Templates (English content) | `index`, `product`, `collection`, `page.about`, `page.faq`, `page.contact`, `page.legal` |
 | Footer | new **legal links menu** setting |
-| Locales | `de` (default), `en`, `pt-BR`; other Dawn locales removed |
+| Locales | `en` (default), `de`, `pt-BR`; other Dawn locales removed |
 
 Palette: cream `#FAF6EE`, sand `#EFE6D6`, terracotta `#A8492E`, forest `#2F4A3A`, ocean `#3B6A80`, ink `#2A2622` (all text pairings ≥ WCAG AA 4.5:1). Fonts: Cormorant (headings) + Jost (body) from Shopify's font library.
 
@@ -49,16 +49,16 @@ shopify theme push --unpublished --theme "RAIZ BRAZIL v1"
 **Pages** (Online Store → Pages) and template:
 | Page title | Handle | Theme template |
 |---|---|---|
-| Über uns | `ueber-uns` | `page.about` |
+| About us | `about-us` | `page.about` |
 | FAQ | `faq` | `page.faq` |
-| Kontakt | `kontakt` | `page.contact` |
-| Impressum, Datenschutz, Widerrufsbelehrung, AGB, Versand & Rückgabe | your choice | `page.legal` |
+| Contact | `contact` | `page.contact` |
+| Legal notice (Impressum), Privacy policy, Withdrawal policy, Terms, Shipping & returns | your choice | `page.legal` |
 
-**Menus** (Online Store → Navigation): `main-menu` (header: Beachwear, Beach & Living, Brazilian Beauty, Neuheiten, Über uns), `footer` (FAQ, Kontakt, Versand & Rückgabe …), `legal` (Impressum, Datenschutz, Widerruf, AGB). Select `legal` in *Footer → Legal links menu*. Shopify's own policy pages (*Settings → Policies*) are also linked automatically; remove duplicates in one place.
+**Menus** (Online Store → Navigation): `main-menu` (header: Beachwear, Beach & Living, Brazilian Beauty, New Arrivals, About us), `footer` (FAQ, Contact, Shipping & returns …), `legal` (Legal notice, Privacy, Withdrawal, Terms). Select `legal` in *Footer → Legal links menu*. Shopify's own policy pages (*Settings → Policies*) are also linked automatically; remove duplicates in one place.
 
-**Languages:** Settings → Languages → add English and Portuguese (Brazil) and set German as default. Theme UI strings are in `locales/*.json`. Content you typed in the Theme Editor (headings, texts) is translated with Shopify's *Translate & Adapt* app.
+**Languages:** Settings → Languages → set English as default and add German and Portuguese (Brazil) as additional languages. Theme UI strings are in `locales/*.json`. Content you typed in the Theme Editor (headings, texts) is translated with Shopify's *Translate & Adapt* app.
 
-**Tone:** copy uses the informal "du" (consistent with Dawn's German locale). Switch to "Sie" by editing `locales/de.default.json` and the template texts.
+**German copy:** `locales/de.json` uses the informal "du", consistent with Dawn's German locale. Translate Theme Editor content with *Translate & Adapt*; switch to "Sie" there if preferred.
 
 ## Theme configuration
 
@@ -81,17 +81,17 @@ The theme ships **no photography**; empty image slots show Shopify's neutral ill
 **Assets:** logo (SVG/PNG) and favicon; hero, editorial, About and tile photography (licensed or your own); social share image.
 
 **Business/legal information (not provided by the theme, must be supplied and reviewed by a qualified person):**
-- Impressum (§ 5 DDG), Datenschutzerklärung, Widerrufsbelehrung, AGB, Versand- und Rückgabebedingungen, company name/address/VAT ID/contact data
+- Legal notice / Impressum (§ 5 DDG for German customers), privacy policy, withdrawal policy, terms and conditions, shipping and returns terms, company name/address/VAT ID/contact data
 - Newsletter consent text and double opt-in setup (default text on the home page is a draft)
 - Cookie consent / Consent-Management (Shopify Customer Privacy settings or an app)
 - Tax and price display ("inkl. MwSt."), shipping rates/zones, delivery times, Grundpreis where required
 - Product facts: materials, sizes, care instructions, origin claims. No certifications or supplier claims are made by the theme.
 
-**Shopify configuration:** products and collections, payments (Settings → Payments), shipping & taxes, Markets/languages, checkout branding, customer accounts, notification e-mails (German), email marketing app, domain.
+**Shopify configuration:** products and collections, payments (Settings → Payments), shipping & taxes, Markets/languages, checkout branding, customer accounts, notification e-mails (in each language you enable), email marketing app, domain.
 
-**Content to write/verify:** About page (real founder story, artisan/partner details), FAQ answers (currently refer to your policy pages), contact details, trust-bar texts, announcement text. The Theme Editor shows orange "Hinweis für Shop-Betreiber" notices on About, FAQ, Contact and legal templates; they are hidden from customers – delete them when done.
+**Content to write/verify:** About page (real founder story, artisan/partner details), FAQ answers (currently refer to your policy pages), contact details, trust-bar texts, announcement text. The Theme Editor shows orange "Note for shop owner" notices on About, FAQ, Contact and legal templates; they are hidden from customers – delete them when done.
 
-**Hero copy:** headline is `A LITTLE PIECE OF BRAZIL.` as briefed; the supporting line is German. English version: *"Discover authentic Brazilian beachwear, beautiful textiles and everyday escapes."*
+**Hero copy:** `A LITTLE PIECE OF BRAZIL.` with the supporting line *"Discover authentic Brazilian beachwear, beautiful textiles and everyday escapes."*
 
 ## Notes
 

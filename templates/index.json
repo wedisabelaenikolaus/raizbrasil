@@ -3,10 +3,10 @@
     "hero": {
       "type": "raiz-hero",
       "settings": {
-        "eyebrow": "Brasilianischer Lifestyle",
+        "eyebrow": "Brazilian lifestyle",
         "heading": "A LITTLE PIECE OF BRAZIL.",
-        "text": "Entdecke authentische brasilianische Beachwear, wunderschöne Textilien und kleine Fluchten für jeden Tag.",
-        "button_label_1": "Jetzt entdecken",
+        "text": "Discover authentic Brazilian beachwear, beautiful textiles and everyday escapes.",
+        "button_label_1": "Shop now",
         "button_link_1": "shopify://collections/all",
         "button_label_2": "",
         "button_link_2": "",
@@ -23,27 +23,27 @@
         "eyebrow": {
           "type": "eyebrow",
           "settings": {
-            "text": "Willkommen bei RAIZ BRAZIL"
+            "text": "Welcome to RAIZ BRAZIL"
           }
         },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Ein Stück Brasilien für dein Zuhause.",
+            "heading": "A little piece of Brazil, delivered to your home.",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>RAIZ BRAZIL bringt brasilianische Beachwear, Textilien und Lifestyle-Essentials nach Deutschland – mit Liebe zum Detail und dem Gefühl von Sommer.</p><p>Entdecke Stücke für Strandtage, Reisen und die kleinen Fluchten im Alltag.</p>"
+            "text": "<p>RAIZ BRAZIL brings Brazilian beachwear, textiles and lifestyle essentials to Europe – with an eye for detail and the feeling of summer.</p><p>Find pieces for beach days, travel and the small escapes of everyday life.</p>"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "label": "Unsere Geschichte",
-            "link": "shopify://pages/ueber-uns",
+            "label": "Our story",
+            "link": "shopify://pages/about-us",
             "style": "secondary"
           }
         }
@@ -69,28 +69,28 @@
           "type": "collection",
           "settings": {
             "title": "Beachwear",
-            "subtitle": "Für Strand, Pool und Reise"
+            "subtitle": "For beach, pool and travel"
           }
         },
         "t2": {
           "type": "collection",
           "settings": {
             "title": "Beach & Living",
-            "subtitle": "Hängematten, Strandtücher & mehr"
+            "subtitle": "Hammocks, beach towels & more"
           }
         },
         "t3": {
           "type": "collection",
           "settings": {
             "title": "Brazilian Beauty",
-            "subtitle": "Natürliche Schönheit aus Brasilien"
+            "subtitle": "Natural beauty from Brazil"
           }
         },
         "t4": {
           "type": "collection",
           "settings": {
-            "title": "Neuheiten",
-            "subtitle": "Frisch eingetroffen"
+            "title": "New Arrivals",
+            "subtitle": "Just arrived"
           }
         }
       },
@@ -101,8 +101,8 @@
         "t4"
       ],
       "settings": {
-        "eyebrow": "Kollektionen",
-        "heading": "Entdecke RAIZ BRAZIL",
+        "eyebrow": "Collections",
+        "heading": "Discover RAIZ BRAZIL",
         "columns_desktop": "4",
         "columns_mobile": "2",
         "image_ratio": "portrait",
@@ -115,7 +115,7 @@
     "bestsellers": {
       "type": "featured-collection",
       "settings": {
-        "title": "Bestseller",
+        "title": "Bestsellers",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -151,20 +151,20 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Slow Summer – überall, wo du willst.",
+            "heading": "Slow summer, wherever you are.",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Hängematten, Strandtücher und Textilien, die jeden Ort in einen kleinen Urlaubsmoment verwandeln: im Garten, auf dem Balkon oder am See.</p>"
+            "text": "<p>Hammocks, beach towels and textiles that turn any place into a small holiday moment: in the garden, on the balcony or by the lake.</p>"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "label": "Beach & Living entdecken",
+            "label": "Explore Beach & Living",
             "link": "shopify://collections/beach-living",
             "style": "secondary"
           }
@@ -190,27 +190,27 @@
         "eyebrow": {
           "type": "eyebrow",
           "settings": {
-            "text": "Unsere Wurzeln"
+            "text": "Our roots"
           }
         },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Raiz heißt Wurzel.",
+            "heading": "Raiz means root.",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Auf Portugiesisch bedeutet „raiz“ Wurzel. Der Name steht für das, was uns antreibt: brasilianische Wurzeln, Kreativität, Handwerk, Farbe und das Gefühl von Sommer.</p><p>Wir erzählen Brasilien warm, modern und ohne Klischees.</p>"
+            "text": "<p>In Portuguese, “raiz” means root. The name stands for what drives us: Brazilian roots, creativity, craftsmanship, colour and the feeling of summer.</p><p>We tell the story of Brazil warmly, with a modern eye and without clichés.</p>"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "label": "Zur Geschichte",
-            "link": "shopify://pages/ueber-uns",
+            "label": "Read our story",
+            "link": "shopify://pages/about-us",
             "style": "secondary"
           }
         }
@@ -236,24 +236,24 @@
           "type": "item",
           "settings": {
             "icon": "sun",
-            "title": "Brasilianische Inspiration",
-            "text": "Beachwear, Textilien und Lifestyle für den Sommer."
+            "title": "Brazilian inspiration",
+            "text": "Beachwear, textiles and lifestyle for summer."
           }
         },
         "b": {
           "type": "item",
           "settings": {
             "icon": "package",
-            "title": "Versand & Rückgabe",
-            "text": "Alle Infos findest du auf unserer Seite Versand & Rückgabe."
+            "title": "Shipping & returns",
+            "text": "Alle Infos findest du auf unserer Seite Shipping & returns."
           }
         },
         "c": {
           "type": "item",
           "settings": {
             "icon": "lock",
-            "title": "Sicher bezahlen",
-            "text": "Checkout über Shopify mit den im Shop angebotenen Zahlungsarten."
+            "title": "Secure checkout",
+            "text": "Checkout via Shopify with the payment methods offered in the shop."
           }
         }
       },
@@ -272,14 +272,14 @@
         "h": {
           "type": "heading",
           "settings": {
-            "heading": "Post aus Brasilien",
+            "heading": "Letters from Brazil",
             "heading_size": "h1"
           }
         },
         "p": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Neuheiten, Inspiration und Einblicke – direkt in dein Postfach.</p>"
+            "text": "<p>New arrivals, inspiration and stories – straight to your inbox.</p>"
           }
         },
         "f": {
@@ -288,7 +288,7 @@
         "c": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Mit der Anmeldung willigst du in den Erhalt unseres Newsletters ein. Du kannst dich jederzeit abmelden. Mehr dazu in unserer <a href=\"/policies/privacy-policy\">Datenschutzerklärung</a>.</p>"
+            "text": "<p>By subscribing you agree to receive our newsletter. You can unsubscribe at any time. Learn more in our <a href=\"/policies/privacy-policy\">privacy policy</a>.</p>"
           }
         }
       },
